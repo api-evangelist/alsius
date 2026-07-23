@@ -1,7 +1,27 @@
 aid: alsius
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/alsius.png
 name: Alsius
-description: Alsius is a company surfaced as a portfolio company of canaan-partners and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Alsius Corporation was a medical-device company that developed catheter-based intravascular
+  temperature-management (IVTM) systems for precise regulation of core body temperature. Its
+  heat-exchange catheters and control consoles induced or reversed therapeutic hypothermia to
+  treat cardiac arrest, brain ischemia, and traumatic brain injury. Backed by Canaan Partners
+  (Canaan Equity), Alsius went public via a 2006 reverse merger with Ithaka Acquisition Corp and
+  sold its temperature-management assets to ZOLL Medical Corporation for roughly USD 12 million in
+  2009, after which it ceased to operate as an independent company. It has no public developer
+  program, API, or specifications; this profile is a Canaan-partners portfolio identity record with
+  no API surface to enrich.
 url: https://raw.githubusercontent.com/api-evangelist/alsius/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +29,29 @@ x-backed-by:
 - canaan-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: zoll-medical
+x-acquired-year: '2009'
+x-industry: medical-devices
+x-has-api: false
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Medical Devices
+- Healthcare
+- Temperature Management
+- Medical Technology
+- Critical Care
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
